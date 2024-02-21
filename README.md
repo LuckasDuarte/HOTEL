@@ -17,7 +17,7 @@ Foram utilizadas as seguintes bibliotecas:
 ## Como Usar
 - Visite o site clincando [AQUI](https://pagehotel.vercel.app/)
 ## Créditos
-Copyright &copy; 2024 - Desenvolvido por: <a href="https://www.instagram.com/tech_dev_info/" target="_blank">TechDev</a>
+Copyright &copy; 2024 - Desenvolvido por: <a href="https://www.instagram.com/tech_dev_info/" >TechDev</a>
 
 
 
