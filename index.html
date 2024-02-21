@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- AOS - Animator -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Site Hotel</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+
+        <a href="#" class="logo" 
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1500"
+            >
+            <i class="fas fa-hotel">
+
+            </i> 
+            hotel 
+        </a>
+
+        <nav class="navbar">
+            <a href="#Home" data-aos="zoom-in-down" data-aos-delay="100">Home</a>
+            <a href="#Sobre" data-aos="zoom-in-down" data-aos-delay="200">Sobre</a>
+            <a href="#Quartos" data-aos="zoom-in-down" data-aos-delay="300">Quartos</a>
+            <a href="#Servicos" data-aos="zoom-in-down" data-aos-delay="400">Serviços</a>
+            <a href="#Galeria" data-aos="zoom-in-down" data-aos-delay="500">Galeria</a>
+            <a href="#Contato" data-aos="zoom-in-down" data-aos-delay="600">Contato</a>
+            <a href="#Reservar" class="btn" data-aos="fade-down" data-aos-delay="700">Reserve já</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars" data-aos="fade-down" data-aos-delay="300"></div>
+    </header>
+
+    <!-- end -->
+
+    <!-- HOME -->
+    <section class="home" id="Home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(assets/home-slide1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3 data-aos="fade-down" data-aos-delay="800">Aqui os Sonhos se Tornam Realidade</h3>
+                        <a href="#" class="btn" data-aos="fade-up" data-aos-delay="800">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(assets/home-slide2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Aqui os Sonhos se Tornam Realidade</h3>
+                        <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(assets/home-slide3.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Aqui os Sonhos se Tornam Realidade</h3>
+                        <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(assets/home-slide4.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Aqui os Sonhos se Tornam Realidade</h3>
+                        <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botao Swipper -->
+            <div class="swiper-button-next"
+                data-aos="fade-left"
+                data-aos-delay="800"    
+            ></div>
+            <div class="swiper-button-prev"
+                data-aos="fade-right"
+                data-aos-delay="800"    
+            ></div>
+        </div>
+    </section>
+
+    <!-- END -->
+
+    <!-- Reservar -->
+    <section class="reservar" id="Reseravar">
+
+        <form action="" data-aos="flip-down" data-aos-delay="200" >
+            <div class="box">
+                <p>Check-In <span>*</span></p>
+                <input type="date" class="input">
+            </div>
+
+            <div class="box">
+                <p>Check-Out <span>*</span></p>
+                <input type="date" class="input">
+            </div>
+
+            <div class="box">
+                <p>Adultos <span>*</span></p>
+                <select name="adultos" id="" class="input">
+                    <option value="1">1 Adulto</option>
+                    <option value="2">2 Adultos</option>
+                    <option value="3">3 Adultos</option>
+                    <option value="4">4 Adultos</option>
+                    <option value="5">5 Adultos</option>
+                    <option value="6">6 Adultos</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>Crianças <span>*</span></p>
+                <select name="criancas" id="" class="input">
+                    <option value="1">0 Crianças</option>
+                    <option value="2">1 Criança</option>
+                    <option value="3">2 Crianças</option>
+                    <option value="4">3 Crianças</option>
+                    <option value="5">4 Crianças</option>
+                    <option value="6">5 Crianças</option>
+                    <option value="7">6 Crianças</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>Quartos <span>*</span></p>
+                <select name="quartos" id="" class="input">
+                    <option value="1">1 Quarto</option>
+                    <option value="2">2 Quartos</option>
+                    <option value="3">3 Quartos</option>
+                    <option value="4">4 Quartos</option>
+                    <option value="5">5 Quartos</option>
+                    <option value="6">6 Quartos</option>
+                </select>
+            </div>
+
+            <input type="submit" value="check reserva" class="btn">
+        </form>
+    </section>
+    <!-- END -->
+
+    <!-- Sobre -->
+    <section class="sobre" id="Sobre">
+
+        <div class="row">
+            <div class="image">
+                <img src="assets/about.jpg" alt="Sobre image"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                >
+            </div>
+
+            <div class="content">
+                <h3 data-aos="fade-up" data-aos-delay="200">Sobre</h3>
+                <p 
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptate autem ullam error obcaecati magnam eligendi ipsa voluptates rerum possimus accusamus excepturi, hic cum saepe quidem eius suscipit harum quae.</p>
+                <p
+                    data-aos="zoom-in" 
+                    data-aos-delay="100"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptate autem ullam error obcaecati magnam eligendi ipsa voluptates rerum possimus accusamus excepturi, hic cum saepe quidem eius suscipit harum quae.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- End -->
+
+    <!-- Quartos -->
+    <section class="quarto" id="Quartos">
+
+        <h1 class="heading" data-aos="fade-up" data-aos-delay="100">Seu Quarto</h1>
+
+        <div class="swiper room-slider"  data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="price">R$150,00/ Diária</span>
+                        <img src="assets/room-1.jpg" alt="Quarto do Hotel">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Quarto Exclusivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Reserve Agora!</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="price">R$150,00/ Diária</span>
+                        <img src="assets/room-2.jpg" alt="Quarto do Hotel">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Quarto Exclusivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Reserve Agora!</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="price">R$150,00/ Diária</span>
+                        <img src="assets/room-3.jpg" alt="Quarto do Hotel">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Quarto Exclusivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Reserve Agora!</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="price">R$150,00/ Diária</span>
+                        <img src="assets/room-4.jpg" alt="Quarto do Hotel">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Quarto Exclusivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Reserve Agora!</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="price">R$150,00/ Diária</span>
+                        <img src="assets/room-5.jpg" alt="Quarto do Hotel">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Quarto Exclusivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Reserve Agora!</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="price">R$150,00/ Diária</span>
+                        <img src="assets/room-6.jpg" alt="Quarto do Hotel">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Quarto Exclusivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Reserve Agora!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- END -->
+
+    <!-- Servicos -->
+    <section class="services" id="Servicos">
+        <h3 data-aos="fade-up" data-aos-delay="100">Serviços</h3>
+
+        <div class="box-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="box">
+                <img src="assets/service1.png" alt="Serviços">
+                <h3>Piscina</h3>
+            </div>
+
+            <div class="box">
+                <img src="assets/service2.png" alt="Serviços">
+                <h3>Comidas e Bebidas</h3>
+            </div>
+            <div class="box">
+                <img src="assets/service3.png" alt="Serviços">
+                <h3>Restaurante</h3>
+            </div>
+            <div class="box">
+                <img src="assets/service4.png" alt="Serviços">
+                <h3>Área para Exercícios</h3>
+            </div>
+            <div class="box">
+                <img src="assets/service5.png" alt="Serviços">
+                <h3>SPA</h3>
+            </div>
+            <div class="box">
+                <img src="assets/service6.png" alt="Serviços">
+                <h3>Resort</h3>
+            </div>
+            </div>
+        </div>
+    </sction>
+
+    <!-- END -->
+
+    <!-- Galeria -->
+    
+    <section class="galeria" id="Galeria">
+
+        <h1 class="heading" data-aos="fade-up" data-aos-delay="100">Galeria</h1>
+
+        <div class="swiper gallery-slider" data-aos="zoom-in" data-aos-delay="200">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <img src="assets/gallery1.jpg" alt="Galeria de Fotos">
+                    <div class="icon">
+                        <i class="fas fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide galeria">
+                    <img src="assets/gallery2.jpg" alt="Galeria de Fotos">
+                    <div class="icon">
+                        <i class="fas fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide galeria">
+                    <img src="assets/gallery3.jpg" alt="Galeria de Fotos">
+                    <div class="icon">
+                        <i class="fas fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide galeria">
+                    <img src="assets/gallery4.jpg" alt="Galeria de Fotos">
+                    <div class="icon">
+                        <i class="fas fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide galeria">
+                    <img src="assets/gallery5.jpg" alt="Galeria de Fotos">
+                    <div class="icon">
+                        <i class="fas fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide galeria">
+                    <img src="assets/gallery6.jpg" alt="Galeria de Fotos">
+                    <div class="icon">
+                        <i class="fas fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> 
+
+    </section>
+
+    <!-- END -->
+
+    <!-- Reservar -->
+
+    <section class="reservar" id="Reservar">
+
+        <h1 class="heading" data-aos="fade-up" data-aos-delay="100">Faça sua Reserva</h1>
+
+        <form action="" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="container">
+
+                <div class="box">
+                    <p>Nome: <span>*</span></p>
+                    <input type="text" class="input" placeholder="Seu Nome" required>
+                </div>
+
+                <div class="box">
+                    <p>Email: <span>*</span></p>
+                    <input type="email" class="input" placeholder="Seu Email" required>
+                </div>
+
+                <div class="box">
+                    <p>Check In: <span>*</span></p>
+                    <input type="date" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>Check Out: <span>*</span></p>
+                    <input type="date" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>Adultos <span>*</span></p>
+                    <select name="adultos" class="input" required>
+                        <option value="1">1 Adulto</option>
+                        <option value="2">2 Adultos</option>
+                        <option value="3">3 Adultos</option>
+                        <option value="4">4 Adultos</option>
+                        <option value="5">5 Adultos</option>
+                        <option value="6">6 Adultos</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <p>Crianças <span>*</span></p>
+                    <select name="criancas" class="input" required>
+                        <option value="1">0 Crianças</option>
+                        <option value="2">1 Criança</option>
+                        <option value="3">2 Crianças</option>
+                        <option value="4">3 Crianças</option>
+                        <option value="5">4 Crianças</option>
+                        <option value="6">5 Crianças</option>
+                        <option value="7">6 Crianças</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <p>Quartos <span>*</span></p>
+                    <select name="quartos" class="input" required>
+                        <option value="1">1 Quarto</option>
+                        <option value="2">2 Quartos</option>
+                        <option value="3">3 Quartos</option>
+                        <option value="4">4 Quartos</option>
+                        <option value="5">5 Quartos</option>
+                        <option value="6">6 Quartos</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="check reserva" class="btn">
+        </form>
+    </section>
+
+    <!-- END -->
+
+    <!-- Footer-->
+
+
+    <section class="footer" id="Contato">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Contato</h3>
+                <a href="#"> <i class="fas fa-phone"></i> (12)3100-0000 </a>
+                <a href="#"> <i class="fas fa-message"></i> (12)99123-4567 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> techdevinfoti@gmail.com </a>
+                <a href="#"> <i class="fas fa-map"></i> Aparecida - SP, Brazil </a>
+            </div>
+
+            <div class="box">
+                <h3>Links Rápidos</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Home</a>
+                <a href="#Sobre"> <i class="fas fa-arrow-right"></i> Sobre</a>
+                <a href="#Quartos"> <i class="fas fa-arrow-right"></i> Quartos</a>
+                <a href="#Servicos"> <i class="fas fa-arrow-right"></i> Serviços</a>
+                <a href="#Galeria"> <i class="fas fa-arrow-right"></i> Galeria</a>
+                <a href="#Reservar"> <i class="fas fa-arrow-right"></i> Reservar</a>
+            </div>
+
+            <div class="box">
+                <h3>Links Extra</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Trabalhe Conosco</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Trabalhe Conosco</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Trabalhe Conosco</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Trabalhe Conosco</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Trabalhe Conosco</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Trabalhe Conosco</a>
+            </div>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-tiktok"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="creditos">
+            &copy; copyright @ 2024 - Desenvolvido por: <a target="_blank" href="https://www.instagram.com/tech_dev_info/">TechDev</a> 
+        </div>
+
+    </section>
+
+    <!-- Botao Whats -->
+    <a 
+        href="https://api.whatsapp.com/send?phone=5512000000000&text=Entre%20em%20Contato"
+        class="btn-whatsapp"
+        target="_blank"
+        data-aos="zoom-in-up" data-aos-delay="400"
+    >
+        <img src="assets/whatssapp.svg" alt="Botão Whats"/>
+        <span class="tooltip-text">Faça sua Reserva!</span>
+    </a>
+
+    <!-- END -->
+
+    <!-- Swipper, AOS e script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

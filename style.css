@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary: #0077b6;
+    --secondary: #48cae4;
+    --black: #333;
+    --white: #fff;
+    --gray: #eee;
+    --gray-sec: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Poppins',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 61.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.heading {
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: .5rem;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background:  var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+
+.header .logo i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+.header .navbar .btn {
+    margin-top: 0;
+    color: var(--white);
+}
+
+.header .navbar .btn:hover {
+    color: var(--white);
+}
+
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+#menu-btn:hover {
+    color: var(--primary);
+}
+
+/* End */
+
+/* Home */
+
+.home {
+    padding: 0;
+}
+
+.home .slide{
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.home .slide .content {
+    width: 90rem;
+    text-align: center;
+}
+
+.home .slide .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 1.1;
+    padding: 2rem 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    height: 5rem;
+    width: 5rem;
+    padding: 3rem;
+    border-radius: .5rem;
+    line-height: 5rem;
+    background: var(--white);
+    color: var(--black);
+    box-shadow: var(--box-shadow);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+/* End */
+
+/* Reservar */
+.reservar form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: var(--gray);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.reservar form .box {
+    flex: 1 1 20rem;
+}
+
+.reservar form .box p {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.reservar form .box .input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    margin: 1rem 0;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+/* End */
+
+/* Sobre */
+
+.sobre .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+}
+
+.sobre .row .image {
+    flex: 1 1 30rem;
+}
+
+.sobre .row .image img{
+   width: 100%;
+}
+
+.sobre .row .content {
+    flex: 1 1 51rem;
+}
+
+.sobre .row .content h3 {
+    font-size: 3.5rem;
+    color: var(--primary);
+    padding: 2rem 0;
+}
+
+.sobre .row .content p {
+    font-size: 1.6rem;
+    color: var(--gray-sec);
+    padding: 1rem 0;
+    line-height: 1.8rem;
+}
+
+/* Quartos */
+
+.quarto .slide{
+    background: var(--white);
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.quarto .slide .image {
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.quarto .slide .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.quarto .slide .image .price {
+    position: absolute;
+    top: 2.5rem; left:  2.5rem;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+}
+
+.quarto .slide .image .fa-shopping-cart{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 50%;
+}
+
+.quarto .slide .image .fa-shopping-cart:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.quarto .slide .content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.quarto .slide .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.quarto .slide .content p {
+    font-size: 1.6rem;
+    color: var(--gray-sec);
+    padding: .5rem;
+    line-height: 1.5rem;
+}
+
+.quarto .slide .content .stars {
+    padding: 1rem 0;
+}
+
+.quarto .slide .content .stars i {
+    font-size: 1.7rem;
+    color: var(--primary);
+}
+
+/* END */
+
+/* Servicos */
+.services .box-container{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.services h3{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.services .box-container .box {
+    text-align: center;
+}
+
+.services .box-container .box img  {
+    height: 10rem;
+    margin-bottom: .7rem;
+}
+
+.services .box-container .box h3 {
+    font-size: 1.7rem;
+    color: var(--black);
+    padding: .5rem  0;
+}
+
+/* END */
+
+/* Galeria */
+
+.galeria .slide{
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.galeria .slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria .slide .icon {
+    display: none ;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.galeria .slide .icon i {
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.galeria .slide:hover .icon {
+    display: flex;
+    cursor: pointer;
+}
+
+
+/* END */
+
+/* Reservar */
+
+.reservar form{
+    padding: 2rem;
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
+    border-radius: 1.5rem;
+}
+
+.reservar form .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem ;
+}
+
+.reservar form .container .box {
+    flex: 1 1 40rem;
+}
+
+/* END */
+
+/* Footer */
+
+.footer {
+    background-color: var(--secondary);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: var(--primary);
+}
+
+.footer .box-container .box a {
+    font-size: 1.6rem;
+    display: block;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--primary);
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--primary);
+}
+
+.footer .share {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a {
+    color: var(--primary);
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--primary);
+    margin: .3rem;
+}
+
+.footer .share a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: rotate(360deg);
+}
+
+.footer .creditos {
+    font-size: 2rem;   
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    color: var(--white);
+}
+
+.footer .creditos a{
+    color: var(--primary);
+}
+
+/* END */
+
+/* Whats Botao */
+
+.btn-whatsapp {
+    position:fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+}
+
+.btn-whatsapp  img{
+    max-width: 74px;
+    transition: transform 0.4s;
+}
+
+.btn-whatsapp img:hover{
+    transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 15rem;
+    top: -1rem;
+    left: -18rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: var(--gray-sec);
+    color: var(--white);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .btn-whatsapp{
+        img{
+            max-width: 64px;
+        }
+    }
+}
+  
+
+
+/* Media Queries */
+
+@media (max-width: 991px){
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem 3rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display:inline-block;
+    }
+
+    .header .navbar {
+        display: none;
+        position: absolute;
+        top: 110%; left: 65%;
+        width: 25rem;
+        box-shadow: var(--box-shadow);
+        background-color: var(--white);
+        border-radius: .5rem;
+        padding-bottom: 1rem;
+    }
+
+    .header .navbar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .2rem;
+        width: 95%;
+        margin-top: .5rem;
+    }
+
+    .header .navbar.active {
+        display: inline;
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navba a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .header .navbar {
+        display: none;
+        position: absolute;
+        top: 110%; left: 30%;
+    }
+
+    .home .slide .content {
+        width: 30rem;
+    }
+
+    .home .slide .content h3 {
+        font-size: 3rem;
+    }
+
+    .swiper-button-next .swiper-button-prev{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 425px){
+    
+    .header .navbar {
+        display: none;
+        position: absolute;
+        top: 110%; left: 50%;
+    }
+
+}
+
+@media (max-width: 375px){
+    
+    .header .navbar {
+        display: none;
+        position: absolute;
+        top: 110%; left: 42%;
+    }
+
+}
+
+@media (max-width: 320px){
+    
+    .header .navbar {
+        display: none;
+        position: absolute;
+        top: 110%; left: 30%;
+    }
+
+}
+
+
+
+
+
+
+
+
